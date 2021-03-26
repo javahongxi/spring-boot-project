@@ -1,0 +1,11 @@
+# Auto Configure
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+org.hongxi.spring.boot.OpenSpringAutoConfiguration
+
+# Application Listeners
+org.springframework.context.ApplicationListener=\
+org.hongxi.spring.boot.listener.ApplicationStartedListener
+
+# Post Processors
+org.springframework.boot.env.EnvironmentPostProcessor=\
+org.hongxi.spring.boot.environment.EnvironmentProcessor
