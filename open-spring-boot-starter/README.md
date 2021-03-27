@@ -1,0 +1,1 @@
+base starter，其他 starters 均依赖该 starter。
