@@ -22,6 +22,7 @@
         <module>rocketmq-spring-boot-starter</module>
         <module>open-spring-boot-starter-web</module>
         <module>open-spring-boot-archetypes</module>
+        <module>redis-spring-boot-starter</module>
     </modules>
 
     <properties>

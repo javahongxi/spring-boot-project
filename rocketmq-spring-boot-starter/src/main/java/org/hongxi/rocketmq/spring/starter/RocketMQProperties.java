@@ -20,8 +20,10 @@ package org.hongxi.rocketmq.spring.starter;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
+import static org.hongxi.spring.boot.common.constants.Constants.OPEN_ROCKETMQ_PREFIX;
+
 @SuppressWarnings("WeakerAccess")
-@ConfigurationProperties(prefix = "spring.rocketmq")
+@ConfigurationProperties(prefix = OPEN_ROCKETMQ_PREFIX)
 @Data
 public class RocketMQProperties {
 

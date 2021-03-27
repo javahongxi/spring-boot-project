@@ -9,8 +9,9 @@ public class Constants {
 
     public static final String OPEN_PREFIX = "open";
 
-    public static final String OPEN_SPRING_PREFIX = OPEN_PREFIX + COMMA + "spring";
-
+    public static final String OPEN_DUBBO_PREFIX = OPEN_PREFIX + COMMA + "dubbo";
+    public static final String OPEN_ROCKETMQ_PREFIX = OPEN_PREFIX + COMMA + "rocketmq";
+    public static final String OPEN_REDIS_PREFIX = OPEN_PREFIX + COMMA + "redis";
     public static final String OPEN_WEB_PREFIX = OPEN_PREFIX + COMMA + "web";
 
     public static final String MONITOR_PREFIX = OPEN_WEB_PREFIX + COMMA + "monitor";

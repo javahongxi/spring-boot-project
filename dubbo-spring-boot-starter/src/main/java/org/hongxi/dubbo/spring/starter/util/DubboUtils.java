@@ -31,6 +31,8 @@ import java.util.Map;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
+import static org.hongxi.spring.boot.common.constants.Constants.OPEN_DUBBO_PREFIX;
+
 /**
  * The utilities class for Dubbo
  *
@@ -52,7 +54,7 @@ public abstract class DubboUtils {
     /**
      * The prefix of property name of Dubbo
      */
-    public static final String DUBBO_PREFIX = "dubbo";
+    public static final String DUBBO_PREFIX = OPEN_DUBBO_PREFIX;
 
     /**
      * The prefix of property name for Dubbo scan
