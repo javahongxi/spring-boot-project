@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import static org.hongxi.spring.boot.web.constants.WebConstants.WEB_URI_FILTER_ORDER;
+import static org.hongxi.spring.boot.web.constants.WebConstants.WEB_MONITOR_FILTER_ORDER;
 
 /**
  * Created by shenhongxi on 2020/11/12.
@@ -36,7 +36,7 @@ public class MonitorFilter extends OncePerRequestFilter implements OrderedFilter
     @Autowired
     private RequestMappingHandlerMapping requestMappingHandlerMapping;
 
-    private int order = REQUEST_WRAPPER_FILTER_MAX_ORDER + WEB_URI_FILTER_ORDER;
+    private int order = REQUEST_WRAPPER_FILTER_MAX_ORDER + WEB_MONITOR_FILTER_ORDER;
 
     private static final String UNKNOWN_URI = "/unknown";
 
