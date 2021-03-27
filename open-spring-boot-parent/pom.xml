@@ -71,6 +71,11 @@
                 <artifactId>rocketmq-spring-boot-starter</artifactId>
                 <version>${revison}</version>
             </dependency>
+            <dependency>
+                <groupId>org.hongxi.spring.boot</groupId>
+                <artifactId>open-spring-boot-starter-web</artifactId>
+                <version>${revison}</version>
+            </dependency>
 
             <dependency>
                 <groupId>org.apache.dubbo</groupId>
