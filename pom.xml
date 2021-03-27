@@ -21,6 +21,7 @@
         <module>open-spring-boot-starter</module>
         <module>rocketmq-spring-boot-starter</module>
         <module>open-spring-boot-starter-web</module>
+        <module>open-spring-boot-archetypes</module>
     </modules>
 
     <properties>
