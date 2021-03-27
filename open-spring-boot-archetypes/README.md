@@ -7,7 +7,7 @@ mvn archetype:generate                                  \
   -DarchetypeArtifactId=web-spring-boot-archetype      \
   -DarchetypeVersion=1.0.0-SNAPSHOT
 ```
-moa工程
+dubbo工程
 ```
 mvn archetype:generate                                  \
   -DarchetypeCatalog=internal                           \
