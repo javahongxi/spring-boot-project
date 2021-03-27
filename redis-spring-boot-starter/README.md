@@ -1,0 +1,1 @@
+本 starter 是针对 sharding 模式的封装，single 或 cluster 模式请使用 spring-boot-starter-data-redis

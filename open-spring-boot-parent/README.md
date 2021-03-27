@@ -1,0 +1,1 @@
+使用者需将本 pom 作为 parent，或者在 dependencyManagement 中 import 进来。

@@ -1,14 +1,14 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-org.hongxi.dubbo.spring.starter.autoconfigure.DubboRelaxedBindingAutoConfiguration,\
-org.hongxi.dubbo.spring.starter.autoconfigure.DubboAutoConfiguration
+org.hongxi.dubbo.spring.autoconfigure.DubboRelaxedBindingAutoConfiguration,\
+org.hongxi.dubbo.spring.autoconfigure.DubboAutoConfiguration
 
 org.springframework.context.ApplicationListener=\
-org.hongxi.dubbo.spring.starter.context.event.OverrideDubboConfigApplicationListener,\
-org.hongxi.dubbo.spring.starter.context.event.WelcomeLogoApplicationListener,\
-org.hongxi.dubbo.spring.starter.context.event.AwaitingNonWebApplicationListener
+org.hongxi.dubbo.spring.context.event.OverrideDubboConfigApplicationListener,\
+org.hongxi.dubbo.spring.context.event.WelcomeLogoApplicationListener,\
+org.hongxi.dubbo.spring.context.event.AwaitingNonWebApplicationListener
 
 org.springframework.boot.env.EnvironmentPostProcessor=\
-org.hongxi.dubbo.spring.starter.env.DubboDefaultPropertiesEnvironmentPostProcessor
+org.hongxi.dubbo.spring.env.DubboDefaultPropertiesEnvironmentPostProcessor
 
 org.springframework.context.ApplicationContextInitializer=\
-org.hongxi.dubbo.spring.starter.context.DubboApplicationContextInitializer
+org.hongxi.dubbo.spring.context.DubboApplicationContextInitializer
