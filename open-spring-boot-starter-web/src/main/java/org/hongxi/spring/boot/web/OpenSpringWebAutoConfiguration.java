@@ -3,7 +3,6 @@ package org.hongxi.spring.boot.web;
 import org.hongxi.spring.boot.web.constants.WebConstants;
 import org.hongxi.spring.boot.web.controller.OpenbootController;
 import org.hongxi.spring.boot.web.exception.DefaultExceptionHandler;
-import org.hongxi.spring.boot.web.filter.FirewallFilter;
 import org.hongxi.spring.boot.web.filter.MonitorFilter;
 import org.hongxi.spring.boot.web.filter.RequestResponseWrapperFilter;
 import org.hongxi.spring.boot.web.filter.SessionFilter;
@@ -64,12 +63,6 @@ public class OpenSpringWebAutoConfiguration {
             filterBean.setFilter(new ShallowEtagHeaderFilter());
             filterBean.setUrlPatterns(Collections.singletonList("/*"));
             return filterBean;
-        }
-
-        @Bean
-        @ConditionalOnProperty(prefix = FIREWALL_PREFIX, name = "enabled", havingValue = "true", matchIfMissing = true)
-        public FirewallFilter firewallFilter() {
-            return new FirewallFilter();
         }
 
         @Bean
