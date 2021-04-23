@@ -1,5 +1,7 @@
 package org.hongxi.spring.boot.web;
 
+import org.hongxi.spring.boot.web.advice.RequestAdvice;
+import org.hongxi.spring.boot.web.advice.ResponseAdvice;
 import org.hongxi.spring.boot.web.constants.WebConstants;
 import org.hongxi.spring.boot.web.controller.OpenbootController;
 import org.hongxi.spring.boot.web.exception.DefaultExceptionHandler;
@@ -85,5 +87,15 @@ public class OpenSpringWebAutoConfiguration {
     @Bean
     public DefaultExceptionHandler defaultExceptionHandler() {
         return new DefaultExceptionHandler();
+    }
+
+    @Bean
+    public RequestAdvice requestAdvice() {
+        return new RequestAdvice();
+    }
+
+    @Bean
+    public ResponseAdvice responseAdvice() {
+        return new ResponseAdvice();
     }
 }
