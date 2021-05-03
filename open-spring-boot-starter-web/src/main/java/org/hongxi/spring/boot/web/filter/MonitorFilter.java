@@ -22,6 +22,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import static org.hongxi.spring.boot.web.constants.WebConstants.URI_PATTERN_ATTR;
 import static org.hongxi.spring.boot.web.constants.WebConstants.WEB_MONITOR_FILTER_ORDER;
 
 /**
@@ -59,6 +60,9 @@ public class MonitorFilter extends OncePerRequestFilter implements OrderedFilter
                                     FilterChain filterChain) throws ServletException, IOException {
         String uri = getUriPattern(request);
         log.info("uri: {}", uri);
+        if (uri != null && !uri.equals(UNKNOWN_URI)) {
+            request.setAttribute(URI_PATTERN_ATTR, uri);
+        }
         filterChain.doFilter(request, response);
         // record monitor data
     }

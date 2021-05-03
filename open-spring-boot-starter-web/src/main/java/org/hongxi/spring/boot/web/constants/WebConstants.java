@@ -15,4 +15,10 @@ public class WebConstants {
             "/actuator/**",
             "/openboot/**"
     };
+
+    public static final String URI_PATTERN_ATTR = qualify("uriPattern");
+
+    private static String qualify(String attr) {
+        return WebConstants.class.getName() + "." + attr;
+    }
 }
